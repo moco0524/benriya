@@ -1,0 +1,139 @@
+@charset: "utf-8";
+html, body {
+    background-color: #b0ed94;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    background-color: #fff;
+    height: 150px;
+}
+            
+.logo {
+    width: 30%;
+    height: 100px;
+    box-sizing:border-box;
+    padding: 20px;
+    float: left;
+}
+
+.headMsg {
+    width: 50%;
+    height: 100px;
+    box-sizing:border-box;
+	padding: 10px;
+	float: left;
+}
+
+.mail {
+	width: 20%;
+    height: 100px;
+	box-sizing:border-box;
+	padding: 20px;
+	float: right;
+}
+
+.menu1 {
+    padding: 10px;
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu2 {
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about {
+    display: inline-block;
+}
+
+.under_line {
+    box-sizing: border-bos;
+    border-top: solid;
+    width: 300px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+<!--
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+-->
