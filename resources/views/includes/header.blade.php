@@ -30,6 +30,5 @@
             <script>
                 function buttonClick() {
                     location.href = "/area/{{$val1}}/{{$val2}}";
-//                    location.href = "/about/{{$val1}}/{{$val2}}";
                 }
             </script>
