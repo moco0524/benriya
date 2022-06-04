@@ -39,6 +39,12 @@ class TopController extends Controller
     	return view ( 'pages.top', compact ( 'val1', 'val2' ) );
     }
 
+    public function contact ( Request $request, string $place='', string $page='' ) {
+        $val1 = $place;
+        $val2 = $page;
+        return view ( 'pages.contact', compact( 'val1', 'val2' ) );
+    }
+
     public function about ( Request $request, string $place='', string $page='' ) {
         $val1 = $place;
         $val2 = $page;
