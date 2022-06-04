@@ -23,7 +23,7 @@ html, body {
 }
 
 .header {
-    position: fixed;
+    position: relative;
     background-color: #fff;
     height: 150px;
 }
@@ -71,14 +71,42 @@ html, body {
     font-weight: bold;
 }
 
-.about {
-    display: inline-block;
+div.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.under_line {
+div.about {
+    margin: 0 auto;
+}
+
+div.area1 {
+    display: flex;
+}
+
+div.under_line {
     box-sizing: border-bos;
     border-top: solid;
     width: 300px;
+}
+
+p.font1 {
+    font-size: 30px;
+    font-weight: bold;ß   
+}
+
+#comp-100gg5iz {
+    --contentPaddingLeft: 0px;
+    --contentPaddingRight: 0px;
+    --contentPaddingTop: 0px;
+    --contentPaddingBottom: 0px;
+    --height: 191px;
+    --width: 600px;
+}
+
+.XUUsC {
+    top: var(--top,auto);
+    z-index: var(--z-index,auto);
 }
 
 .styled {

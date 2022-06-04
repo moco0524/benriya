@@ -7,7 +7,7 @@
                         <img src="/images/head_tel.png" height=80px>
                     </div>
                     <div class="mail">
-                        <input class="styled" type="button" value="お問合せはこちらまで">
+                        <input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで">
                         <p>{{$val1}}　{{$val2}}</p>
                     </div>
                 </div>
@@ -26,3 +26,10 @@
                     </div>
                 </div>
             </div>
+            
+            <script>
+                function buttonClick() {
+                    location.href = "/area/{{$val1}}/{{$val2}}";
+//                    location.href = "/about/{{$val1}}/{{$val2}}";
+                }
+            </script>
