@@ -95,6 +95,10 @@ p.font1 {
     font-weight: bold;ß   
 }
 
+.red {
+    color: #FF0000;
+}
+
 #comp-100gg5iz {
     --contentPaddingLeft: 0px;
     --contentPaddingRight: 0px;
