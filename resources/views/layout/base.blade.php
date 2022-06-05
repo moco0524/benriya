@@ -27,10 +27,9 @@
 
     <body>
         <div class="position-ref full-height">
-            <header>
+            <header style="postion: fixed;">
                 @include('includes.header')
             </header>
-
             <main style="overflow-x:auto; overflow-y:auto">
                 @yield('content')
             </main>

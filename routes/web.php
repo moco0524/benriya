@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'TopController@index');
 
 Route::get('/top/{place?}/{page?}/{flg?}', 'TopController@index');
 
