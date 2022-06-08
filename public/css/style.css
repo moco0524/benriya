@@ -1,116 +1,49 @@
 @charset: "utf-8";
-html, body {
+body {
     background-color: #b0ed94;
     color: #636b6f;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
     height: 100vh;
-    margin: 0;
+    margin: 20px;
+    padding: 50px 10px 50px 10px;
 }
 
-.full-height {
-    height: 100vh;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.header {
-    position: relative;
-    background-color: #fff;
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 150px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
 }
-            
+
+.wrapper {
+    width: 2000px;
+    display: flex;
+}
+
 .logo {
-    width: 30%;
+    width: 400px;
     height: 100px;
     box-sizing:border-box;
     padding: 20px;
-    float: left;
 }
 
 .headMsg {
-    width: 50%;
+    width: 600px;
     height: 100px;
     box-sizing:border-box;
 	padding: 10px;
-	float: left;
 }
 
 .mail {
-	width: 20%;
+	width: 400px;
     height: 100px;
 	box-sizing:border-box;
 	padding: 20px;
-	float: right;
-}
-
-.menu1 {
-    padding: 10px;
-    display: inline-block;
-    width: 25%;
-    height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-.menu2 {
-    padding: 10px;
-    display: inline-block;
-    width: 20%;
-    height: 50px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-div.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.about {
-    margin: 0 auto;
-}
-
-div.area1 {
-    display: flex;
-}
-
-div.under_line {
-    box-sizing: border-bos;
-    border-top: solid;
-    width: 300px;
-}
-
-p.font1 {
-    font-size: 30px;
-    font-weight: bold;ß   
-}
-
-.red {
-    color: #FF0000;
-}
-
-#comp-100gg5iz {
-    --contentPaddingLeft: 0px;
-    --contentPaddingRight: 0px;
-    --contentPaddingTop: 0px;
-    --contentPaddingBottom: 0px;
-    --height: 191px;
-    --width: 600px;
-}
-
-.XUUsC {
-    top: var(--top,auto);
-    z-index: var(--z-index,auto);
 }
 
 .styled {
@@ -139,3 +72,154 @@ p.font1 {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+.menu {
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-family: "メイリオ";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Contents {
+    width: 100%;
+    overflow: auto;
+}
+
+.area {
+    text-align: center;
+    font-family: "メイリオ";
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.area-map {
+    width: 980px;
+}
+
+.img_block img {
+    display: block;
+    margin: auto;
+}
+
+.table {
+    width: 980px;
+    margin: auto;
+}
+
+.table_line {
+    display: table;
+    width: 980px;
+}
+
+.under_line {
+    box-sizing: border-bos;
+    border-top: solid;
+    width: 980px;
+}
+
+.title_block {
+    font-family: "メイリオ";
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 200px;
+    height: 80px;
+}
+
+.detail_block {
+    font-family: "メイリオ";
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 300px;
+}
+/*
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position: relative;
+    background-color: #fff;
+    
+    height: 150px;
+}
+            
+.menu2 {
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.center {
+    margin: 25px;
+    width: 400px;
+}
+
+div.about {
+    margin: 0 auto;
+}
+
+div.area1 {
+    display: flex;
+}
+
+p.font1 {
+    font-size: 30px;
+    font-weight: bold;ß   
+}
+
+.red {
+    color: #FF0000;
+}
+
+.h3-size {
+    font-size: 47px;
+}
+
+.tokyo-txcolor {
+    color: #930000;
+}
+
+.container {
+    width: 980px;
+}
+
+div.container.contact-step {
+    text-align: -webkit-center;
+}
+
+.contact-area {
+    padding: 50px;
+    width: 100%;
+}
+
+#comp-100gg5iz {
+    --contentPaddingLeft: 0px;
+    --contentPaddingRight: 0px;
+    --contentPaddingTop: 0px;
+    --contentPaddingBottom: 0px;
+    --height: 191px;
+    --width: 600px;
+}
+
+.XUUsC {
+    top: var(--top,auto);
+    z-index: var(--z-index,auto);
+}
+
+*/

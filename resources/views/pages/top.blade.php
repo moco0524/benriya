@@ -4,9 +4,9 @@
 
 @section('content')
 <div class="center>
-	<div id="comp-100gg5iz" class="XUUsC">
+	<div>
 		<div data-testid="linkElement" class="xQ_iF">
-			<img src="/images/lisence.png" alt="実績" style="width:600px;height:191px;object-fit:cover;object-position:50% 50%">
+			<img src="/images/lisence.png" alt="実績" style="width: ">
 		</div>
 	</div>
 	

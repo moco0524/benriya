@@ -26,11 +26,13 @@
     </head>
 
     <body>
-        <div class="position-ref full-height">
-            <header style="postion: fixed;">
+        <div class="Header">
+            <header>
                 @include('includes.header')
             </header>
-            <main style="overflow-x:auto; overflow-y:auto">
+        </div>
+        <div class="Contents">
+            <main style="padding-top: 150px; overflow-x:auto; overflow-y:auto;">
                 @yield('content')
             </main>
         </div>

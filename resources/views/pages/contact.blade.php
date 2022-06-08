@@ -3,45 +3,44 @@
 @section('title', '足立区　便利屋クリーン　連絡用')
 
 @section('content')
-<div>
-	<p>
-		<img src="/images/contact-step.png" alt="お問合せ手順">
-	</p>
+<div class="contact-area">
+	<div class="container contact-step" align="center">
+		<span class="h3-size tokyo-txcolor">まずは何でもお気軽にご相談ください</span>
+		<p>
+			<img src="/images/contact-step.png" alt="お問合せ手順">
+		</p>
+	</div>
 </div>
-<div>
-	<div>
-		<form action="" method="post">
+<div class="contact-area">
+	<div class="container contact-step" align="center">
+		<form action="/mail/send" method="post">
+		@csrf
 			<p>
 				<label>お名前（カナ）<span class="red">（必須）</span></label>
-				<br />
 				<span>
 					<input type="text" name="name" value size="40">
 				</span>
 			</p>
 			<p>
-				<label>お電話番号<span class="red">（必須）</span></label>
-				<br />
+				<label style="width: 200px">お電話番号<span class="red">（必須）</span></label>
 				<span>
 					<input type="text" name="telno" value size="40">
 				</span>
 			</p>
 			<p>
-				<label>郵便番号（ハイフン無し）</label>
-				<br />
+				<label style="width: 200px">郵便番号（ハイフン無し）</label>
 				<span>
 					<input type="text" name="zipno" value size="40">
 				</span>
 			</p>
 			<p>
-				<label>ご住所</label>
-				<br />
+				<label style="width: 200px">ご住所</label>
 				<span>
 					<input type="text" name="address" value size="40">
 				</span>
 			</p>
 			<p>
-				<label>メールアドレス<span class="red">（必須）</span></label>
-				<br />
+				<label style="width: 200px">メールアドレス<span class="red">（必須）</span></label>
 				<span>
 					<input type="text" name="mailadd" value size="40">
 				</span>

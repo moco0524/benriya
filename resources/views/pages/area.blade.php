@@ -3,6 +3,8 @@
 @section('title', '足立区　便利屋クリーン　対応エリア')
 
 @section('content')
-<p>エリア画面</p>
-<img src="/images/map.png">
+<div class="img_block">
+	<p class="area">対応エリア</p>
+	<img src="/images/map.png" class="area-map" >
+</div>
 @endsection
