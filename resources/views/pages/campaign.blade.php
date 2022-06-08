@@ -8,15 +8,15 @@
 	<img src="/images/furniture.webp" style="width: 400px; display: block; margin: auro;" >
 	<img src="/images/waste.webp" style="width:400px; display: block; margin: auto;">
 </div>
-<div>
+<div style="text-align: center; width: 980px">
 	<img src="/images/organizing_relics.webp" style="width: 400px; display: block; margin: auto;" />
 	<img src="/images/movement.webp" style="width: 400px; display: block; margin: auto;" />
 </div>
-<div>
+<div style="text-align: center; width: 980px">
 	<img src="/images/moving.webp" style="width:400px; display: block; margin: auto;" />
 	<img src="/images/do_it_yourself.webp" style="width: 400px; display: block; margin: auto;">
 </div>
-<div>
+<div style="text-align: center; width: 980px">
 	<img src="/images/garden_cleaning.webp" style="width: 400px; display: block; margin: auto;" />
 	<img src="/images/various_agency.webp" style="width: 400px; display: block; margin: auto;" />
 </div>

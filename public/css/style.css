@@ -96,6 +96,13 @@ body {
     font-weight: bold;
 }
 
+.font {
+    text-align: center;
+    font-family: "メイリオ";
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .area-map {
     width: 980px;
 }
