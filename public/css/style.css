@@ -22,6 +22,7 @@ body {
 
 .wrapper {
     display: flex;
+    justify-content: flex-start;
 }
 
 .logo {
@@ -143,6 +144,54 @@ body {
     vertical-align: bottom;
     width: 300px;
 }
+
+div.container.contact-step {
+    text-align: -webkit-center;
+}
+
+ul li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+ul span:first-of-type {
+    -webkit-flex-basis: 400px;
+    flex-basis: 400px;
+}
+
+ul span:nth-of-type(2) {
+    -webkit-flex-basis: 210px;
+    flex-basis: 210px;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+ul input[type="text"], ul textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contact_title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact_area {
+    width: 100%;
+}
+
+.red {
+    color: #FF0000;
+}
+
+
 /*
 .full-height {
     height: 100vh;
@@ -189,10 +238,6 @@ p.font1 {
     font-weight: bold;ß   
 }
 
-.red {
-    color: #FF0000;
-}
-
 .h3-size {
     font-size: 47px;
 }
@@ -203,15 +248,6 @@ p.font1 {
 
 .container {
     width: 980px;
-}
-
-div.container.contact-step {
-    text-align: -webkit-center;
-}
-
-.contact-area {
-    padding: 50px;
-    width: 100%;
 }
 
 #comp-100gg5iz {
