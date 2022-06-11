@@ -112,20 +112,17 @@ body {
     margin: auto;
 }
 
-.table {
-    width: 980px;
-    margin: auto;
-}
-
 .table_line {
+    width: 900px;
     display: table;
-    width: 980px;
+    margin: 0 auto;
 }
 
 .under_line {
     box-sizing: border-bos;
     border-top: solid;
-    width: 980px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .title_block {
@@ -204,4 +201,51 @@ ul input[type="text"], ul textarea {
     vertical-align: bottom;
     font-size: 20px;
     font-weight: bold;
+}
+
+input[type=checkbox] {
+    -webkit-transform-orign: right bottom;
+    -webkit-transform: scale( 2 , 2 );
+}
+
+.campaign {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.campaign_detail {
+    width: 400px;
+    display: block;
+}
+
+.campaign_title {
+    display: inline-block;
+    width: 390px;
+    font-size: 30px;
+    font-family: "メイリオ";
+    background-color: #3399FF;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.campaign_block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.block {
+    padding: 10px;
+}
+
+.detail1 {
+    padding: 80px 40px 80px 20px;
+}
+
+.detail2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0000ff;
 }

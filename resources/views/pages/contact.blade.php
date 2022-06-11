@@ -65,7 +65,7 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="checkbox" name="kinkyu" value="今すぐ解決してほしい">今すぐ解決してほしい</span>
+				<span class="box cell"><input type="checkbox" name="kinkyu" value="今すぐ解決してほしい">　<span class="red">今すぐ</span>解決してほしい</span>
 			</li>
 
 			<li>
@@ -74,22 +74,18 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><textarea name="message" cols="40" rows="10" style="font-size: 25px"></textarea></span>
+				<span class="box1 cell"><textarea name="message" cols="40" rows="10" style="font-size: 25px"></textarea></span>
 			</li>
 
 			<li>
 				<div class="box table">
 					<span class="box1 cell"><input type="checkbox" name="accept" value="1"></span>
-				</div>
-			</li>
-			<li>
-				<div class="box table">
-					<span class="box1 cell">内容をご確認の上チェックを入れてください<span class="red">（必須）</span></span>
+					<span class="box1 cell">　内容をご確認の上チェックを入れてください<span class="red">（必須）</span></span>
 				</div>
 			</li>
 		</ul>
-		<div>
-			<input type="submit" value="送信">
+		<div style="height: 100px; table-layout: fixed;">
+			<input type="submit" class="styled" value="　送信　">
 		</div>
 	</form>
 </div>
