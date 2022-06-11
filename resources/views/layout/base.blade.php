@@ -22,7 +22,12 @@
 
         <!-- css -->
         <link rel="stylesheet" href="/css/style.css">
+
+        <!-- JQuery -->
+        <script src="/js/jquery-3.6.0.min.js"></script>
+
         <title>@yield('title')</title>
+
     </head>
 
     <body>

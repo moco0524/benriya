@@ -1,4 +1,11 @@
 @charset: "utf-8";
+
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 body {
     background-color: #b0ed94;
     color: #636b6f;
@@ -26,24 +33,24 @@ body {
 }
 
 .logo {
-    width: 400px;
-    height: 100px;
+    width: 25%;
+    height: 10%;
     box-sizing:border-box;
     padding: 20px;
 }
 
 .headMsg {
-    width: 600px;
-    height: 100px;
+    height: 10%;
     box-sizing:border-box;
-	padding: 10px;
+	padding: 5px;
 }
 
 .mail {
-	width: 400px;
-    height: 100px;
+	width: 16%;
+	height: 10%;
 	box-sizing:border-box;
-	padding: 20px;
+	padding: 25px 0px 0px 0px;
+	text-align: right;
 }
 
 .styled {
@@ -248,4 +255,46 @@ input[type=checkbox] {
     font-size: 18px;
     font-weight: bold;
     color: #0000ff;
+}
+
+.fa-position-left {
+    position: absolute;
+    top: calc(50% - .5em);
+    left: 1rem;
+}
+
+.fa-position-right {
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 1rem;
+}
+
+.button05 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 80px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    box-shadow: 0 5px 0 #aaaaaa;
+    transition: 0.3s;
+}
+
+.button05 a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+}
+
+.button05 a:hober {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #aaaaaa;
 }
