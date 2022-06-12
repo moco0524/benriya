@@ -88,7 +88,7 @@
 		</ul>
 		<div style="height: 100px; table-layout: fixed;">
 			<div class="button05">
-				<a id="mail_send" href="">送信</a>
+				<a id="mail_send" href="javascript:mailsend.submit()">送信</a>
 			</div>
 		</div>
 	</form>

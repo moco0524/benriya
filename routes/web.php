@@ -22,4 +22,6 @@ Route::get('/area/{place?}/{page?}', 'TopController@area');
 
 Route::get('/campaign/{place?}/{page?}', 'TopController@campaign');
 
-Route::post('/mail/send', 'MailController@send');
+/*Route::post('/mail/send', 'MailController@send');*/
+Route::post('/mail/send/{place?}/{page?}', 'RegisterController@register');
+
