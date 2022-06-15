@@ -12,7 +12,7 @@
 	</div>
 </div>
 <div align="center">
-	<form name="mailsend" action="/mail/send" method="post">
+	<form name="mailsend" action="/mail/send/{{$val1}}/{{$val2}}" method="post">
 	@csrf
 		<ul style="width:600px">
 			<li>
@@ -21,7 +21,7 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" id="name" name="name" value size="40" style="font-size: 25px;"></span>
+				<span class="contact_area"><input type="text" id="name" name="name" value size="40" style="font-size: 25px;" pattern="(?=.*?[\u30A1-\u30FC])[\u30A1-\u30FC]*" title="全角カタカナで入力してください" required></span>
 			</li>
 
 			<li>
@@ -30,7 +30,7 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="telno" value size="40" style="font-size: 25px;"></span>
+				<span class="contact_area"><input type="text" name="telno" value size="40" style="font-size: 25px;" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required></span>
 			</li>
 
 			<li>
@@ -39,7 +39,7 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="zipno" value size="40" style="font-size: 25px"></span>
+				<span class="contact_area"><input type="text" name="zipno" value size="40" style="font-size: 25px" pattern="\d{3}-?\d{4}"></span>
 			</li>
 
 			<li>
@@ -56,7 +56,7 @@
 					<span class="box1 cell">メールアドレス<span class="red">（必須）</span></span>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="mailadd" value size="40" style="font-size: 25px"></span>
+				<span class="contact_area"><input type="text" name="email" value size="40" style="font-size: 25px" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z{2,}$" required></span>
 			</li>
 
 			<li>
@@ -65,7 +65,7 @@
 				</div>
 			</li>
 			<li>
-				<span class="box1 cell"><textarea name="message" cols="40" rows="10" style="font-size: 25px"></textarea></span>
+				<span class="box1 cell"><textarea name="message" cols="40" rows="10" style="font-size: 25px" required></textarea></span>
 			</li>
 
 			<li>
@@ -88,63 +88,10 @@
 		</ul>
 		<div style="height: 100px; table-layout: fixed;">
 			<div class="button05">
-				<a id="mail_send" href="javascript:mailsend.submit()">送信</a>
+				<a id="mail_send" href="javascript:mailsend.submit();">送信</a>
 			</div>
 		</div>
 	</form>
 </div>
 
-<script type="text/javascript">
-	$(document).ready(function () {
-		// 送信ボタンを非表示
-		$("#mail_send").hide();
-
-		// 確認用チェックボックスの処理
-		$("#accept").click(function () {
-			if ($("#accept").prop("checked") == true) {
-				$("#mail_send").show();
-			} else {
-				$("#mail_send").hide();
-			}
-		})
-
-		// 送信ボタン押下
-		$("#mail_send").click(function () {
-			// メッセージ設定
-			let msg = "";
-
-			// 名前のチェック
-			let nameVal = $('input[name="name"]').val();
-			if (nameVal == null || nameVal == '' ) {
-				$("#name").css("background-color","#FF0000");
-				msg = "お名前を入力してください";
-			}
-			// 電話番号のチェック
-			let telnoVal = $('input[name="telno"]').val();
-			if (telnoVal == null || telnoVal == '' ) {
-				$("#telno").css("background-color","#FF0000");
-				msg = msg + "\nお電話番号を入力してください";
-			}
-
-			// メールアドレスのチェック
-			let mailaddVal = $('input[name="mailadd"]').val();
-			if (mailaddVal == null || mailaddVal == '' ) {
-				$("#mailadd").css("background-color","#FF0000");
-				msg = msg + "\nメールアドレスを入力してください";
-			}
-
-			// メッセージ本文のチェック
-			let messageVal = $('textarea[name="message"]').val();
-			if (messageVal == null || messageVal == '' ) {
-				$("#message").css("background-color","#FF0000");
-				msg = msg + "\nメッセージ本文を入力してください";
-			}
-
-			// 必須項目が未入力の場合のアラート			
-			if (msg != null && msg != '') {
-				alert(msg);
-			}
-		})
-	})
-</script>
 @endsection

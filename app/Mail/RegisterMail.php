@@ -16,9 +16,15 @@ class RegisterMail extends Mailable
      *
      * @return void
      */
-    public function __construct($name)
+    public function __construct($name, $telno, $zipno, $address, $email, $kinkyu, $message)
     {
         $this->name = $name;
+        $this->telno = $telno;
+        $this->zipno = $zipno;
+        $this->address = $address;
+        $this->email = $email;
+        $this->kinkyu = $kinkyu;
+        $this->message = $message;
     }
 
     /**
@@ -28,10 +34,16 @@ class RegisterMail extends Mailable
      */
     public function build()
     {
-     //   return $this->view('view.name');
-        return $this->to('y-ogawa@orion.ocn.ne.jp')
-            ->subject('登録完了')
+        return $this->to($this->email)
+            ->subject('問い合わせメール')
             ->view('pages.register_mail')
-            ->with(['name' => $this->name, 'val1' => "", 'val2' => ""]);
+            ->with(['name' => $this->name,
+                        'telno' => $this->telno,
+                        'zipno' => $this->zipno,
+                        'address' => $this->address,
+                        'body' => $this->message,
+                        'kinkyu' => $this->kinkyu,
+                        'val1' => "",
+                        'val2' => ""]);
     }
 }

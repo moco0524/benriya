@@ -9,10 +9,19 @@ use App\Mail\RegisterMail;
 
 class RegisterController extends Controller
 {
-    public function register(Request $request) {
+    public function register(Request $request, string $place='', string $page='') {
+        $val1 = $place;
+        $val2 = $page;
+        
     	$name = $request['name'];
+    	$telno = $request['telno'];
+    	$zipno = $request['zipno'];
+    	$address = $request['address'];
+    	$email = $request['email'];
+    	$kinkyu = $request['kinkyu'];
+    	$message = $request['message'];
     	
-    	Mail::send(new RegisterMail($name));
-    	return view('pages.contact');
+    	Mail::send(new RegisterMail($name, $telno, $zipno, $address, $email, $kinkyu, $message));
+    	return view('pages.thanks', compact( 'val1', 'val2') );
 	}
 }
