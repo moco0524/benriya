@@ -13,7 +13,7 @@ class TopController extends Controller
     	$val2 = $page;
     	$val3 = $flg;
     	
-    	if ( $flg == '0' ) {
+    	if ( $flg == '' ) {
         	// 当日日時取得
             date_default_timezone_set('Asia/Tokyo');
             $today = date("Y-m-d H:i:s");
@@ -36,7 +36,7 @@ class TopController extends Controller
         }
 
         // トップページを表示
-    	return view ( 'pages.top', compact ( 'val1', 'val2' ) );
+    	return view ( 'pages.top', compact ( 'val1', 'val2', 1 ) );
     }
 
     public function contact ( Request $request, string $place='', string $page='' ) {

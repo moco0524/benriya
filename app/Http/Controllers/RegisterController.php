@@ -22,6 +22,6 @@ class RegisterController extends Controller
     	$message = $request['message'];
     	
     	Mail::send(new RegisterMail($name, $telno, $zipno, $address, $email, $kinkyu, $message));
-    	return view('pages.thanks', compact( 'val1', 'val2') );
+    	return view('pages.thanks', compact( 'val1', 'val2' ) );
 	}
 }

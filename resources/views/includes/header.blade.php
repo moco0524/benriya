@@ -15,7 +15,7 @@
 
 <div class="wrapper">
     <div class="menu">
-        <a href="/top/{{$val1}}/{{$val2}}">Home</a>
+        <a href="/top/{{$val1}}/{{$val2}}/1">Home</a>
     </div>
  
     <div class="menu">
