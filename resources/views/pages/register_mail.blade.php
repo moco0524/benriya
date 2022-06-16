@@ -6,6 +6,6 @@
 	<p>連絡先　　：　{{ $telno }}</p>
 	<p>郵便番号　：　{{ $zipno }}</p>
 	<p>住所　　　：　{{ $address }}</p>
-	<p>依頼内容　：　<p>
-	{{ $body }}
+	<p>依頼内容　：　</p>
+	<p style="white-space: pre-wrap;">{{ $body }}</p>
 @endsection

@@ -33,6 +33,7 @@ body {
 }
 
 .logo {
+    display: flex;
     width: 25%;
     height: 10%;
     box-sizing:border-box;
@@ -40,12 +41,14 @@ body {
 }
 
 .headMsg {
+    display: flex;
     height: 10%;
     box-sizing:border-box;
 	padding: 5px;
 }
 
 .mail {
+    display: flex;
 	width: 16%;
 	height: 10%;
 	box-sizing:border-box;
@@ -111,42 +114,16 @@ body {
 }
 
 .area-map {
-    width: 980px;
+    width: 600px;
+}
+
+.resizeimage img {
+    width: 100%;
 }
 
 .img_block img {
     display: block;
     margin: auto;
-}
-
-.table_line {
-    width: 900px;
-    display: table;
-    margin: 0 auto;
-}
-
-.under_line {
-    box-sizing: border-bos;
-    border-top: solid;
-    width: 900px;
-    margin: 0 auto;
-}
-
-.title_block {
-    font-family: "メイリオ";
-    font-size: 30px;
-    display: table-cell;
-    vertical-align: bottom;
-    width: 200px;
-    height: 80px;
-}
-
-.detail_block {
-    font-family: "メイリオ";
-    font-size: 30px;
-    display: table-cell;
-    vertical-align: bottom;
-    width: 300px;
 }
 
 div.container.contact-step {
@@ -202,6 +179,36 @@ ul input[type="text"], ul textarea {
     height: 40px;
 }
 
+.table_line {
+    width: 400px;
+    display: table;
+    margin: 0 auto;
+}
+
+.title_block {
+    font-family: "メイリオ";
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 100px;
+    height: 80px;
+}
+
+.detail_block {
+    font-family: "メイリオ";
+    font-size:20px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 300px;
+}
+
+.under_line {
+    box-sizing: border-bos;
+    border-top: solid;
+    width: 450px;
+    margin: 0 auto;
+}
+
 .cell {
     display: table-cell;
     text-align: left;
@@ -216,18 +223,18 @@ input[type=checkbox] {
 }
 
 .campaign {
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .campaign_detail {
-    width: 400px;
+    width: 40%;
     display: block;
 }
 
 .campaign_title {
     display: inline-block;
-    width: 390px;
+    width: 95%;
     font-size: 30px;
     font-family: "メイリオ";
     background-color: #3399FF;

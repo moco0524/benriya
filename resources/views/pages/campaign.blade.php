@@ -5,7 +5,7 @@
 @section('content')
 <p class="area">キャンペーン画面</p>
 <div class="campaign">
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">家具・家電の高価買取</span>
 			<img class="campaign_detail" src="/images/furniture.webp">
@@ -16,10 +16,10 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">遺品整理</span>
-			<img src="/images/waste.webp" class="campaign_detail">
+			<img class="campaign_detail" src="/images/waste.webp">
 		</div>
 		<div>
 			<img class="detail1" src="/images/service-other-price1.png">
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">不用品処分</span>
 			<img src="/images/organizing_relics.webp" class="campaign_detail" />
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">引越しサポート</span>
 			<img src="/images/movement.webp" class="campaign_detail" />
@@ -49,7 +49,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">家電・家具移動</span>
 			<img src="/images/moving.webp" class="campaign_detail" />
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">日曜大工</span>
 			<img src="/images/do_it_yourself.webp" class="campaign_detail">
@@ -71,7 +71,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">庭掃除</span>
 			<img src="/images/garden_cleaning.webp" class="campaign_detail" />
@@ -82,7 +82,7 @@
 		</div>
 	</div>
 
-	<div class="campaign_block">
+	<div class="campaign_block resizeimage">
 		<div class="block">
 			<span class="campaign_title">各種代行</span>
 			<img src="/images/various_agency.webp" class="campaign_detail" />

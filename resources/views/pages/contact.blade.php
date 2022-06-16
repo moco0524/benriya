@@ -21,7 +21,9 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" id="name" name="name" value size="40" style="font-size: 25px;" pattern="(?=.*?[\u30A1-\u30FC])[\u30A1-\u30FC]*" title="全角カタカナで入力してください" required></span>
+				<span class="contact_area">
+					<input type="text" required placeholder="全角カナで入力してください" id="name" name="name" value size="40" style="font-size: 25px;" pattern="(?=.*?[\u30A1-\u30FC])[\u30A1-\u30FC]*">
+				</span>
 			</li>
 
 			<li>
@@ -30,7 +32,9 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="telno" value size="40" style="font-size: 25px;" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required></span>
+				<span class="contact_area">
+					<input type="tel" name="telno" value size="40" style="font-size: 25px;" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" required>
+				</span>
 			</li>
 
 			<li>
@@ -39,7 +43,9 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="zipno" value size="40" style="font-size: 25px" pattern="\d{3}-?\d{4}"></span>
+				<span class="contact_area">
+					<input type="text" name="zipno" value size="40" style="font-size: 25px" pattern="\d{3}-?\d{4}">
+				</span>
 			</li>
 
 			<li>
@@ -48,7 +54,9 @@
 				</div>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="address" value size="40" style="font-size: 25px"></span>
+				<span class="contact_area">
+					<input type="text" name="address" value size="40" style="font-size: 25px">
+				</span>
 			</li>
 				
 			<li>
@@ -56,7 +64,9 @@
 					<span class="box1 cell">メールアドレス<span class="red">（必須）</span></span>
 			</li>
 			<li>
-				<span class="contact_area"><input type="text" name="email" value size="40" style="font-size: 25px" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z{2,}$" required></span>
+				<span class="contact_area">
+					<input type="email" name="email" value size="40" style="font-size: 25px" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z{2,}$" required>
+				</span>
 			</li>
 
 			<li>
@@ -65,7 +75,9 @@
 				</div>
 			</li>
 			<li>
-				<span class="box1 cell"><textarea name="message" cols="40" rows="10" style="font-size: 25px" required></textarea></span>
+				<span class="box1 cell">
+					<textarea placeholder="ご依頼内容またはご質問を入力してください" name="message" cols="40" rows="10" style="font-size: 25px" required></textarea>
+				</span>
 			</li>
 
 			<li>
@@ -94,4 +106,19 @@
 	</form>
 </div>
 
+<script type="text/javascript">
+	// 送信ボタンを非表示
+	$(document).ready( function () {
+		$("#mail_send").hide();
+	})
+		
+	// 確認用チェックボックスの処理
+	$("#accept").click( function () {
+		if ($("#accept").prop("checked") == true) {
+			$("#mail_send").show();
+		} else {
+			$("#mail_send").hide();
+		}
+	})
+</script>
 @endsection
