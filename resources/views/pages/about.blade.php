@@ -12,12 +12,12 @@
 	<div class="under_line"></div>
 	<div class="table_line">
 		<div class="title_block">住所</div>
-		<div class="detail_block">東京都足立区梅島 2-17-1A-402</div>
+		<div class="detail_block">東京都足立区梅島2-17-1A-402</div>
 	</div>
 	<div class="under_line"></div>
 	<div class="table_line">
 		<div class="title_block">TEL</div>
-		<div class="detail_block">0120-065-955</div>
+		<div id="call" class="detail_block"></div>
 	</div>
 	<div class="under_line"></div>
 	<div class="table_line">
@@ -35,5 +35,20 @@
 		<div class="detail_block">年中無休</div>
 	</div>
 	<div class="under_line"></div>
+	<div><p></p></div>
 </div>
+
+<script type="text/javascript">
+	$(function(){
+		var ua = navigator.userAgent;
+		var phone = document.getElementById('call')
+		if (ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) {
+			phone.innerHTML = '<a href="tel:0120065955">0120-065-955</a>'
+		}else if (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0) {
+			phone.innerHTML = '<a href="tel:0120065955">0120-065-955</a>'
+		} else {
+			phone.innerHTML = '0120-065-955'
+		}
+	})
+</script>
 @endsection
