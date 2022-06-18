@@ -3,8 +3,8 @@
         <img src="/images/logo.png" height=50px>
     </div>
 
-    <div class="headMsg">
-        <img src="/images/head_tel.png" height=80px style="margin: 0 auto;">
+    <div id="call" class="headMsg" style="margin:0 auto;">
+        <img src="/images/head_tel.png" height=80px>
     </div>
 
     <div class="mail">
@@ -31,7 +31,19 @@
     </div>
 </div>
 
-<script>
+<script type="text/javascript">
+	$(function(){
+		var ua = navigator.userAgent;
+		var phone = document.getElementById('call')
+		if (ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) {
+			phone.innerHTML = '<a href="tel:0120065955"><img src="/images/head_tel.png" height=80px></a>'
+		}else if (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0) {
+			phone.innerHTML = '<a href="tel:0120065955"><img src="/images/head_tel.png" height=80px></a>'
+		} else {
+			phone.innerHTML = '<img src="/images/head_tel.png" height=80px>'
+		}
+	})
+
     function buttonClick() {
         location.href = "/contact/{{$val1}}/{{$val2}}";
     }

@@ -86,7 +86,7 @@ body {
 
 .headMsg {
     display: flex;
-    width: 30%;
+    width: *;
     height: 10%;
     box-sizing:border-box;
 	padding: 5px;
@@ -94,7 +94,7 @@ body {
 
 .mail {
     display: flex;
-	width: 16%;
+	width: 17%;
 	height: 10%;
 	box-sizing:border-box;
 	padding: 25px 0px 0px 0px;

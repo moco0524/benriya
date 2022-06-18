@@ -13,13 +13,8 @@
 Route::get('/', 'TopController@index');
 
 Route::get('/top/{place?}/{page?}/{flg?}', 'TopController@index');
-
-Route::get('/contact/{place?}/{page?}/{flg?}', 'TopController@contact');
-
-Route::get('/about/{place?}/{page?}/{flg?}', 'TopController@about');
-
-Route::get('/area/{place?}/{page?}/{flg?}', 'TopController@area');
-
-Route::get('/campaign/{place?}/{page?}/{flg?}', 'TopController@campaign');
-
-Route::post('/mail/send/{place?}/{page?}/{flg?}', 'RegisterController@register');
+Route::get('/contact/{place?}/{page?}', 'TopController@contact');
+Route::get('/about/{place?}/{page?}', 'TopController@about');
+Route::get('/area/{place?}/{page?}', 'TopController@area');
+Route::get('/campaign/{place?}/{page?}', 'TopController@campaign');
+Route::post('/mail/send/{place?}/{page?}', 'RegisterController@register');
