@@ -1,17 +1,8 @@
-<div class="wrapper">
-    <div class="logo">
-        <img src="/images/logo.png" height=50px>
-    </div>
-
-    <div id="call" class="headMsg" style="margin:0 auto;">
-        <img src="/images/head_tel.png" height=80px>
-    </div>
-
-    <div class="mail">
-        <input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで">
-    </div>
-</div>
-
+<ul class="wrapper">
+    <li><img src="/images/logo.png"></li>
+    <li id="call" style="margin:0 auto;"><img src="/images/head_tel.png"></li>
+    <li><input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで"></li>
+</ul>
 
 <div class="wrapper">
     <div class="menu">

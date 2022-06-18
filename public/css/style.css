@@ -1,16 +1,11 @@
 @charset: "utf-8";
 
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 .form {
  padding: 1em;
  border-radius: 5px;
  background-color: #ffffff;
 }
+/*
 .item label {
  display: flex;
  flex-wrap: wrap;
@@ -50,7 +45,7 @@ input:valid + span .notice:after {
  margin-left: .5em;
  content: '入力OK';
 }
-
+*/
 body {
     background-color: #b0ed94;
     color: #636b6f;
@@ -97,7 +92,7 @@ body {
 	width: 17%;
 	height: 10%;
 	box-sizing:border-box;
-	padding: 25px 0px 0px 0px;
+	padding: 25px 0px 20px 0px;
 	text-align: right;
 }
 
@@ -153,18 +148,42 @@ body {
 
 .font {
     text-align: center;
-    font-family: "メイリオ";
-    font-size: 25px;
     font-weight: bold;
+}
+
+.font-family {
+    font-family: "メイリオ";
+}
+
+.size1 {
+    font-size: 20px;
+}
+
+.size2 {
+    font-size: 25px;
+}
+
+.size3 {
+    font-size: 30px;
+}
+
+.size4 {
+    font-size: 35px;
+}
+
+.size5 {
+    font-size: 40px;
 }
 
 .area-map {
     width: 600px;
 }
 
+/*
 .resizeimage img {
     width: 100%;
 }
+*/
 
 .img_block img {
     display: block;
@@ -175,6 +194,10 @@ div.container.contact-step {
     text-align: -webkit-center;
 }
 
+ul {
+    list-style: none;
+}
+/*
 ul li {
     display: -webkit-flex;
     display: flex;
@@ -201,6 +224,7 @@ ul input[type="text"], ul textarea {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+*/
 
 .contact_title {
     width: 100%;
@@ -271,25 +295,19 @@ input[type=checkbox] {
 
 .campaign {
     width: 100%;
-    margin: 0 auto;
 }
 
 .campaign_block {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
 }
 
 .campaign_detail {
-    width: 500px;
-    display: inline-block;
+    display: block;
 }
 
 .campaign_title {
     display: inline-block;
-    width: 500px;
+    width: 90%;
     font-size: 30px;
     font-family: "メイリオ";
     background-color: #3399FF;
@@ -298,19 +316,25 @@ input[type=checkbox] {
 }
 
 .block {
-    height: 500px;
-    width: 400px;
+    overflow: hidden;
+    height: 100%;
+    width: 45%;
     padding: 10px;
 }
 
+.item {
+    float: left;
+}
+
 .detail1 {
-    padding: 80px 40px 80px 20px;
+    padding: 20px 0px 0px 20px;
 }
 
 .detail2 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     color: #0000ff;
+    padding: 20px 0px 0px 20px;
 }
 
 .fa-position-left {

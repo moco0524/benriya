@@ -17,7 +17,7 @@
 	<div class="under_line"></div>
 	<div class="table_line">
 		<div class="title_block">TEL</div>
-		<div id="call" class="detail_block"></div>
+		<div id="callphone" class="detail_block"></div>
 	</div>
 	<div class="under_line"></div>
 	<div class="table_line">
@@ -41,7 +41,7 @@
 <script type="text/javascript">
 	$(function(){
 		var ua = navigator.userAgent;
-		var phone = document.getElementById('call')
+		var phone = document.getElementById('callphone')
 		if (ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) {
 			phone.innerHTML = '<a href="tel:0120065955">0120-065-955</a>'
 		}else if (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0) {
