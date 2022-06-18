@@ -5,7 +5,7 @@
 @section('content')
 <div class="contact-area">
 	<div class="area" align="center">
-		<span class="tokyo-txcolor" style="display: flex;">まずは何でもお気軽にご相談ください</span>
+		<span style="display: flex;">まずは何でもお気軽にご相談ください</span>
 		<p class="resizeimage">
 			<img src="/images/contact-step.png" alt="お問合せ手順">
 		</p>

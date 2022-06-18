@@ -3,14 +3,14 @@
 @section('title', '足立区　便利屋クリーン　トップ')
 
 @section('content')
-<div class="center">
-	<div>
-		<div class="resizeimage" style="width: 60%; margin: 0 auto;">
+<div>
+	<div class="resizeimage">
+		<div class="resizeimage resizestyle">
 			<img src="/images/lisence.png">
 		</div>
 	</div>
 	<div>
-	<div class="resizeimage" style="width: 60%; margin: 0 auto;">
+	<div class="resizeimage resizestyle">
 		<img src="/images/koe-bnr.png">
 	</div>
 	</div>

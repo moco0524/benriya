@@ -5,7 +5,7 @@
  border-radius: 5px;
  background-color: #ffffff;
 }
-/*
+
 .item label {
  display: flex;
  flex-wrap: wrap;
@@ -45,7 +45,7 @@ input:valid + span .notice:after {
  margin-left: .5em;
  content: '入力OK';
 }
-*/
+
 body {
     background-color: #b0ed94;
     color: #636b6f;
@@ -381,4 +381,9 @@ input[type=checkbox] {
 
 .resizeimage img {
     width: 100%;
+}
+
+.resizestyle {
+    width: 60%;
+    margin: 0 auto;
 }

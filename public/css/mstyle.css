@@ -1,17 +1,11 @@
 @charset: "utf-8";
 
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 .form {
  padding: 1em;
  border-radius: 5px;
  background-color: #ffffff;
 }
-/*
+
 .item label {
  display: flex;
  flex-wrap: wrap;
@@ -51,7 +45,7 @@ input:valid + span .notice:after {
  margin-left: .5em;
  content: '入力OK';
 }
-*/
+
 body {
     background-color: #b0ed94;
     color: #636b6f;
@@ -265,6 +259,7 @@ ul input[type="text"], ul textarea {
     font-family: "メイリオ";
     font-size: 20px;
     display: table-cell;
+    text-align: center;
     vertical-align: bottom;
     width: 30%;
     height: 80px;
@@ -386,4 +381,9 @@ input[type=checkbox] {
 
 .resizeimage img {
     width: auto;
+}
+
+.resizestyle {
+    width: 60%;
+    margin: 0 auto;
 }
