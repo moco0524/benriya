@@ -1,49 +1,57 @@
 @charset: "utf-8";
 
 .form {
- padding: 1em;
- border-radius: 5px;
- background-color: #ffffff;
+    height: 100px;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
 
 .item label {
- display: flex;
- flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .item label > * {
- display: block;
- width: 100%;
+    display: block;
+    width: 100%;
 }
+
 .item label > input {
- order: 2;
- border-radius: 3px;
- border: 1px solid #aaa;
+    order: 2;
+    border-radius: 3px;
+    border: 1px solid #aaa;
 }
+
 .item label > span {
- order: 1;
- margin-bottom: 3px;
+    order: 1;
+    margin-bottom: 3px;
 }
+
 .notice {
- font-size: 12px;
- line-height: 1;
- display: inline-block;
- margin-left: 5px;
- padding: 2px;
- color: #666;
- border: 1px solid #666;
- border-radius: 3px;
+    font-size: 12px;
+    line-height: 1;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 2px;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 3px;
 }
+
 input:invalid + span .notice {
- color: red;
- border-color: red;
+    color: red;
+    border-color: red;
 }
+
 input:valid + span .notice {
- color: green;
- border-color: green;
+    color: green;
+    border-color: green;
 }
+
 input:valid + span .notice:after {
- margin-left: .5em;
- content: '入力OK';
+    margin-left: .5em;
+    content: '入力OK';
 }
 
 body {
@@ -197,7 +205,7 @@ div.container.contact-step {
 ul {
     list-style: none;
 }
-/*
+
 ul li {
     display: -webkit-flex;
     display: flex;
@@ -224,7 +232,6 @@ ul input[type="text"], ul textarea {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-*/
 
 .contact_title {
     width: 100%;
