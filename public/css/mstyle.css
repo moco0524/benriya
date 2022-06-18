@@ -131,11 +131,11 @@ body {
 .menu {
     padding: 10px;
     display: inline-block;
-    width: 300px;
+    width: 25%;
     height: 50px;
     text-align: center;
     font-family: "メイリオ";
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
 }
 
