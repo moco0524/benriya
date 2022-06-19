@@ -33,14 +33,17 @@ class ContactMail extends Mailable
      * @return $this
      */
     public function build()
-    {
-        return $this->to($this->email)
+    { 
+//        mailadd = "benriya.clean.web@gmail.com";
+        return $this->to('benriya.clean.web@gmail.com')
+            ->from($this->email)
             ->subject('問い合わせメール')
             ->view('pages.register_mail')
             ->with(['name' => $this->name,
                         'telno' => $this->telno,
                         'zipno' => $this->zipno,
                         'address' => $this->address,
+                        'mailadd' => $this->email,
                         'kinkyu' => $this->kinkyu,
                         'body' => $this->message,
                         'val1' => "",
