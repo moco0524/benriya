@@ -1,7 +1,7 @@
 @charset: "utf-8";
 
 .form {
-    height: 870px;
+    height: 950px;
     padding: 1em;
     border-radius: 5px;
     background-color: #ccffff;
@@ -360,7 +360,6 @@ input[type=checkbox] {
 
 .item {
     float: center;
-    height: 80px;
     width: 90%;
 }
 
