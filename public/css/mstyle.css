@@ -364,8 +364,9 @@ input[type=checkbox] {
 }
 
 .item2 {
-    float: center;
     height: 220px;
+    margin-left: 15px;
+    text-align: left;
 }
 
 .item3 {
@@ -454,4 +455,9 @@ contact {
 
 .imagesize {
     width: 80%;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
 }

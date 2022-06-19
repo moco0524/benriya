@@ -366,6 +366,7 @@ input[type=checkbox] {
 .item2 {
     float: center;
     height: 210px;
+    text-align: left;
 }
 
 .item3 {
@@ -452,4 +453,9 @@ input[type=checkbox] {
 
 .imagesize {
     width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
 }
