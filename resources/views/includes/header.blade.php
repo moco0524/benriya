@@ -1,7 +1,7 @@
-<ul class="wrapper">
+<ul class="menuwrap">
     <li><img src="/images/logo.png"></li>
     <li id="call" style="margin:0 auto;"><img src="/images/head_tel.png"></li>
-    <li><input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで"></li>
+    <li style="margin-right: 60px;"><input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで"></li>
 </ul>
 
 <div class="wrapper">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="menu">
-        <a href="/campaign/{{$val1}}/{{$val2}}">割引キャンペーン</a>
+        <a href="/campaign/{{$val1}}/{{$val2}}">キャンペーン</a>
     </div>
 </div>
 

@@ -38,7 +38,7 @@
             </header>
         </div>
         <div class="Contents">
-            <main style="padding-top: 100px; overflow-x:auto; overflow-y:auto;">
+            <main class="Main">
                 @yield('content')
             </main>
         </div>

@@ -69,13 +69,17 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 160px;
     padding: 10px;
     background-color: #ffffff;
     color: #000000;
 }
 
 .wrapper {
+    display: flex;
+}
+
+.menuwrap {
     display: flex;
 }
 
@@ -134,12 +138,18 @@ body {
 .menu {
     padding: 10px;
     display: inline-block;
-    width: 25%;
+    width: 20%;
     height: 50px;
     text-align: center;
     font-family: "メイリオ";
     font-size: 25px;
     font-weight: bold;
+}
+
+.Main {
+    padding-top: 100px;
+    overflow-x: auto;
+    overfllow-y: auto;
 }
 
 .Contents {
@@ -322,6 +332,11 @@ input[type=checkbox] {
     color: #FFFFFF;
 }
 
+.campaign_style {
+    display: flex;
+    width: 90%;
+}
+
 .block {
     overflow: hidden;
     height: 100%;
@@ -334,6 +349,7 @@ input[type=checkbox] {
 }
 
 .detail1 {
+    display: flex;
     padding: 20px 0px 0px 20px;
 }
 
