@@ -171,13 +171,10 @@ body {
 
 .Main {
     padding-top: 130px;
-    overflow-x: auto;
-    overfllow-y: auto;
 }
 
 .Contents {
     width: 100%;
-    overflow: auto;
 }
 
 .area {
