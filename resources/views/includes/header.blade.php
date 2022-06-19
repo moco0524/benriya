@@ -1,6 +1,6 @@
 <ul class="menuwrap">
-    <li><img src="/images/logo.png"></li>
-    <li id="call" style="margin:0 auto;"><img src="/images/head_tel.png"></li>
+    <li style="margin: 0 auto;"><img class="imagesize" src="/images/logo.png"></li>
+    <li id="call" style="margin:0 auto;"></li>
     <li style="margin-right: 60px;"><input type="button" class="styled" onclick="buttonClick()" value="お問合せはこちらまで"></li>
 </ul>
 
@@ -18,7 +18,7 @@
     </div>
 
     <div class="menu">
-        <a href="/campaign/{{$val1}}/{{$val2}}">キャンペーン</a>
+        <a href="/campaign/{{$val1}}/{{$val2}}">割り引き</a>
     </div>
 </div>
 
@@ -27,11 +27,11 @@
 		var ua = navigator.userAgent;
 		var phone = document.getElementById('call')
 		if (ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) {
-			phone.innerHTML = '<a href="tel:0120065955"><img src="/images/head_tel.png" height=80px></a>'
+			phone.innerHTML = '<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png"></a>'
 		}else if (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0) {
-			phone.innerHTML = '<a href="tel:0120065955"><img src="/images/head_tel.png" height=80px></a>'
+			phone.innerHTML = '<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png"></a>'
 		} else {
-			phone.innerHTML = '<img src="/images/head_tel.png" height=80px>'
+			phone.innerHTML = '<img class="imagesize" src="/images/head_tel.png">'
 		}
 	})
 

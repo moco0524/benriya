@@ -3,11 +3,10 @@
 @section('title', '足立区　便利屋クリーン　会社概要')
 
 @section('content')
-<p class="area">会社概要</p>
 <div class="table">
 	<div class="table_line">
 		<div class="title_block">会社名</div>
-		<div class="detail_block">便利屋クリーン</div>
+		<div class="detail_block"><span class="red">便利屋クリーン</span></div>
 	</div>
 	<div class="under_line"></div>
 	<div class="table_line">
@@ -27,12 +26,12 @@
 	<div class="under_line"></div>
 	<div class="table_line">
 		<div class="title_block">営業時間</div>
-		<div class="detail_block">24時間</div>
+		<div class="detail_block"><span class="red">24</span>時間</div>
 	</div>
 	<div class="under_line"></div>
 	<div class="table_line">
 		<div class="title_block">定休日</div>
-		<div class="detail_block">年中無休</div>
+		<div class="detail_block">年中<span class="red">無休</span></div>
 	</div>
 	<div class="under_line"></div>
 	<div><p></p></div>
