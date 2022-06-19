@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SendMail extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,15 +16,15 @@ class SendMail extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $telno, $zipno, $mailadd, $kinkyu, $message, $accept)
+    public function __construct($name, $telno, $zipno, $address, $email, $kinkyu, $message)
     {
         $this->name = $name;
         $this->telno = $telno;
         $this->zipno = $zipno;
-        $this->email = $mailadd;
+        $this->address = $address;
+        $this->email = $email;
         $this->kinkyu = $kinkyu;
         $this->message = $message;
-        $this->accept = $accept;
     }
 
     /**
@@ -36,14 +36,14 @@ class SendMail extends Mailable
     {
         return $this->to($this->email)
             ->subject('問い合わせメール')
-            ->view('test.email')
-            ->with([
-                'name' => $this->name,
-                'telno' => $this->telno,
-                'zipno' => $this->zipno,
-                'kinkyu' => $this->kinkyu,
-                'message' => $this->message,
-                'accept' => $this->accept,
-                
+            ->view('pages.register_mail')
+            ->with(['name' => $this->name,
+                        'telno' => $this->telno,
+                        'zipno' => $this->zipno,
+                        'address' => $this->address,
+                        'kinkyu' => $this->kinkyu,
+                        'body' => $this->message,
+                        'val1' => "",
+                        'val2' => ""]);
     }
 }

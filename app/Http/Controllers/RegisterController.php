@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Mail;
-use App\Mail\RegisterMail;
+use App\Mail\ContactMail;
 
 class RegisterController extends Controller
 {
@@ -21,7 +21,7 @@ class RegisterController extends Controller
     	$kinkyu = $request['kinkyu'];
     	$message = $request['message'];
     	
-    	Mail::send(new RegisterMail($name, $telno, $zipno, $address, $email, $kinkyu, $message));
+    	Mail::send(new ContactMail($name, $telno, $zipno, $address, $email, $kinkyu, $message));
     	return view('pages.thanks', compact( 'val1', 'val2' ) );
 	}
 }

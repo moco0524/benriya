@@ -4,6 +4,7 @@
 
 @section('content')
 <div>
+	<div id="topMsg" class="resizeimage resizestyle"></div>
 	<div class="resizeimage">
 		<div class="resizeimage resizestyle">
 			<img src="/images/lisence.png">
@@ -27,16 +28,18 @@
 			<img src="/images/step.png">
 		</div>
 </div>
+
 <script type="text/javascript">
 	$(function(){
 		var ua = navigator.userAgent;
-		var phone = document.getElementById('callphone')
-		if (ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) {
-			phone.innerHTML = 'まずは　☎️ <a href="tel:08043466004">０１２０ー０６５ー９５５</a>　までお電話ください'
-		}else if (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0) {
-			phone.innerHTML = 'まずは　☎️ <a href="tel:08043466004">０１２０ー０６５ー９５５</a>　までお電話ください'
+		if ((ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) ||
+			(ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0)) {
+			$("#callphone").html('まずは　☎️ <a href="tel:0120065955">０１２０ー０６５ー９５５</a>　までお電話ください');
+			$("#topMsg").html('<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png">');
 		} else {
-			phone.innerHTML = 'まずは　☎️ ０１２０ー０６５ー９５５　までお電話ください'
+			$("#callphone").html('まずは　☎️ ０１２０ー０６５ー９５５　までお電話ください');
+			$("#topMsg").html('');
+//			$("#topMsg").html('<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png">');
 		}
 	})
 </script>
