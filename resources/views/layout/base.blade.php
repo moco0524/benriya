@@ -21,8 +21,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- css -->
-        <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen and (min-width: 391px)">
-        <link rel="stylesheet" href="/css/mstyle.css" type="text/css" media="screen and (max-width: 390px)">
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen and (min-width: 390px)">
+        <link rel="stylesheet" href="/css/mstyle.css" type="text/css" media="screen and (max-width: 389px)">
 
         <!-- JQuery -->
         <script src="/js/jquery-3.6.0.min.js"></script>
