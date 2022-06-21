@@ -7,13 +7,9 @@ use Storage;
 
 class TopController extends Controller
 {
-    public function index ( Request $request, string $place='no', string $page='no', string $flg='' ) {
-        // ルートパラメータ取得
-    	$val1 = $place;
-    	$val2 = $page;
-//    	$val3 = $flg;
+    public function index ( Request $request, string $page='no', string $place='no' ) {
     	
-    	if ( $flg == '' ) {
+    	if ( $page != 'no' && $place != 'no' ) {
         	// 当日日時取得
             date_default_timezone_set('Asia/Tokyo');
             $today = date("Y-m-d H:i:s");
@@ -28,39 +24,38 @@ class TopController extends Controller
             $sessionId = $request->session()->getId();
         
             // ログ作成
-            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $url . '","' . $val1 . '","' . $val2 . '"';
+            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $url . '","' . $place . '","' . $page . '"';
         
             // ローカル領域へのログ出力
             $disk = Storage::disk('local');
             Storage::append('accesslog.csv', $log);
+            
+            // 指定のページへジャンプ
+            if ($page != "no") {
+                return view ( 'pages.campaign', compact( 'page' , 'place' ) );
+            } else {
+                return view ( 'pages.top' );
+            }
+        } else {
+            // トップページを表示
+            return view ( 'pages.top', [ 'page' => $page] );
         }
-
-        // トップページを表示
-        return view ( 'pages.top', compact ( 'val1', 'val2', 1 ) );
     }
 
-    public function contact ( Request $request, string $place='no', string $page='no' ) {
-        $val1 = $place;
-        $val2 = $page;
-        return view ( 'pages.contact', compact( 'val1', 'val2' ) );
+    public function contact ( Request $request ) {
+        return view ( 'pages.contact' );
     }
 
-    public function about ( Request $request, string $place='no', string $page='no' ) {
-        $val1 = $place;
-        $val2 = $page;
-        return view ( 'pages.about', compact( 'val1', 'val2' ) );
+    public function about () {
+        return view ( 'pages.about' );
     }
 
-    public function area ( Request $request, string $place='no', string $page='no' ) {
-        $val1 = $place;
-        $val2 = $page;
-        return view ( 'pages.area', compact( 'val1', 'val2' ) );
+    public function area () {
+        return view ( 'pages.area' );
     }
 
-    public function campaign ( Request $request, string $place='no', string $page='no' ) {
-        $val1 = $place;
-        $val2 = $page;
-        return view ( 'pages.campaign', compact( 'val1', 'val2' ) );
+    public function campaign ( string $page='no', string $place='no') {
+        return view ( 'pages.campaign', compact( 'page', 'place' ) );
     }
 
 }

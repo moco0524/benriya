@@ -12,7 +12,7 @@
 	</div>
 </div>
 <div align="center" class="form" id="formStyle">
-	<form name="mailsend" action="/mail/send/{{$val1}}/{{$val2}}" method="post">
+	<form name="mailsend" action="/mail/send" method="post">
 	@csrf
 		<!-- 名前の入力 -->
 		<div class="item contact" id="nameSize" style="height: 80px;">

@@ -9,19 +9,19 @@
 
 <div class="wrapper">
     <div class="menu">
-        <a href="/top/{{$val1}}/{{$val2}}/1">Home</a>
+        <a href="/top">Home</a>
     </div>
  
     <div class="menu">
-        <a href="/about/{{$val1}}/{{$val2}}">会社概要</a>
+        <a href="/about">会社概要</a>
     </div>
 
     <div class="menu">
-        <a href="/area/{{$val1}}/{{$val2}}">対応エリア</a>
+        <a href="/area">対応エリア</a>
     </div>
 
     <div class="menu">
-        <a href="/campaign/{{$val1}}/{{$val2}}">割引</a>
+        <a href="/campaign">割引</a>
     </div>
 </div>
 
@@ -41,7 +41,7 @@
 	})
 
     function mailClick() {
-        location.href = "/contact/{{$val1}}/{{$val2}}";
+        location.href = "/contact";
     }
     function telClick() {
     	location.href = "tel:0120065955";

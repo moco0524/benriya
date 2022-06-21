@@ -11,10 +11,9 @@
 |
 */
 Route::get('/', 'TopController@index');
-
-Route::get('/top/{place?}/{page?}/{flg?}', 'TopController@index');
-Route::get('/contact/{place?}/{page?}', 'TopController@contact');
-Route::get('/about/{place?}/{page?}', 'TopController@about');
-Route::get('/area/{place?}/{page?}', 'TopController@area');
-Route::get('/campaign/{place?}/{page?}', 'TopController@campaign');
-Route::post('/mail/send/{place?}/{page?}', 'RegisterController@register');
+Route::get('/top/{page?}/{place?}', 'TopController@index');
+Route::get('/contact', 'TopController@contact');
+Route::get('/about', 'TopController@about');
+Route::get('/area', 'TopController@area');
+Route::get('/campaign/{page?}/{place?}', 'TopController@campaign');
+Route::post('/mail/send', 'RegisterController@register');
