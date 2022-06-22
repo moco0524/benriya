@@ -24,11 +24,12 @@ class TopController extends Controller
             $sessionId = $request->session()->getId();
         
             // ログ作成
-            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $url . '","' . $place . '","' . $page . '"';
+            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $page . '","' . $place . '"';
         
             // ローカル領域へのログ出力
             $disk = Storage::disk('local');
-            Storage::append('accesslog.csv', $log);
+            $yymm = date("Ym");
+            Storage::append($yymm . '_accesslog.csv', $log);
             
             // 指定のページへジャンプ
             if ($page != "no") {
