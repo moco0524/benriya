@@ -35,9 +35,11 @@ class ContactMail extends Mailable
     public function build()
     { 
 //        mailadd = "benriya.clean.web@gmail.com";
-        return $this->to('benriya.clean.web@gmail.com')
-            ->from($this->email)
+        $to = array( 'benriya.clean.info@gmail.com' , 'benriya.clean.mng@gmail.com' );
+        return $this
+            ->from( $this->email)
             ->subject('問い合わせメール')
+            ->to( $to, '便利屋クリーン' )
             ->view('pages.register_mail')
             ->with(['name' => $this->name,
                         'telno' => $this->telno,

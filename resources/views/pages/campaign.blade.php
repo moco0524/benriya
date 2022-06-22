@@ -6,7 +6,7 @@
 <input type="hidden" id="page" value="{{ $page }}" />
 <input type="hidden" id="place" value="{{ $place }}" />
 <div class="campaign">
-	<div id="furniture">
+	<div id="kaitori">
 		<span class="campaign_title">家具・家電の高価買取</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -23,7 +23,7 @@
 		</div>
 	</div>
 
-	<div id="waste">
+	<div id="ihin">
 		<span class="campaign_title">遺品整理</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -40,7 +40,7 @@
 		</div>
 	</div>
 
-	<div id="organizing">
+	<div id="fuyohin">
 		<span class="campaign_title">不用品処分</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -55,7 +55,7 @@
 		</div>
 	</div>
 
-	<div id="movement">
+	<div id="hikkoshi">
 		<span class="campaign_title">引越しサポート</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 
-	<div id="moving">
+	<div id="ido">
 		<span class="campaign_title">家電・家具移動</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -101,7 +101,7 @@
 		</div>
 	</div>
 
-	<div id="garden">
+	<div id="souji">
 		<span class="campaign_title">庭掃除</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">
@@ -116,7 +116,7 @@
 		</div>
 	</div>
 
-	<div id="various">
+	<div id="daiko">
 		<span class="campaign_title">各種代行</span>
 		<div class="campaign_style">
 			<div class="block item4 resizeimage">/Users/hiro/benriya-clean/benriya/routes/web.php
