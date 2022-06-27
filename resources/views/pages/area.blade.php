@@ -17,13 +17,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		                <div class="logo_fixedheader">
 <!--		                    <a href="https://benriya-clean.com/area/index.php">-->
 		                    <a href="index.php">
-		                        <img src="./images//logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
+		                        <img src="/images//logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
 		                    </a>
 		                </div>
 		                <div class="tel_fixedheader">
-		                    <img src="./images//scroll-tel-1.png" alt="24時間受付！年中無休緊急対応！インターネット専用ダイヤル">
+		                    <img src="/images//scroll-tel-1.png" alt="24時間受付！年中無休緊急対応！インターネット専用ダイヤル">
 		                </div>
-		                <div class="Webwari_fixedheader"><img src="./images//scroll-webwari.png" alt="Web割で10%還元"></div>
+		                <div class="Webwari_fixedheader"><img src="/images//scroll-webwari.png" alt="Web割で10%還元"></div>
 		                <div class="mail_fixedheader ">
 <!--		                    <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
 		                    <a href="contact.html">メール相談・お問合せ</a>
@@ -35,10 +35,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 
         <div class="main-v pc" align="center" style="margin-top:30px;">
             <h2 style="margin-bottom:30px;">対応エリア</h2>
-            <p><img src="./images//area.png" alt="対応エリア"></p>
+            <p><img src="/images//area.png" alt="対応エリア"></p>
         </div>
         <div class="sp-main-v sp" align="center">
-            <h2><img src="./images//area.png" alt="対応エリア"></h2>
+            <h2><img src="/images//area.png" alt="対応エリア"></h2>
         </div>
 
         <script type="text/javascript">
