@@ -31,17 +31,9 @@ class TopController extends Controller
             $yymm = date("Ym");
             Storage::append($yymm . '_accesslog.csv', $log);
             
-            // 指定のページへジャンプ
-//            if ($page != "no") {
-//                return view ( 'pages.campaign', compact( 'page' , 'place' ) );
-//            } else {
-//                return view ( 'pages.top' );
-//           }
-//        } else {
         }
             // トップページを表示
         return view ( 'pages.top');
-//        }
     }
 
     public function contact ( Request $request ) {

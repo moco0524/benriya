@@ -17,17 +17,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <!-- BootstrapのCSS読み込み -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
     
         <!-- カスタマイズのCSS読み込み -->
-        <link href="./css/style.css" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet">
     
         <!-- jQuery読み込み -->
         <script src="{{ asset('/js/jquery.min.js') }}"></script>
     
         <!-- BootstrapのJS読み込み -->
         <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-        <link href="./css/font-awesome.min.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
         <title>便利屋クリーン | 便利屋 なんでも屋 首都圏全域対応</title>
 
         <!-- All In One SEO Pack 3.7.0[1251,1291] -->
@@ -58,8 +58,8 @@
                 padding: 0 !important;
             }
         </style>
-        <link rel="stylesheet" id="wp-block-library-css" href="./css/style.min.css" type="text/css" media="all">
-        <link rel="stylesheet" id="contact-form-7-css" href="./css/styles.css" type="text/css" media="all">
+        <link rel="stylesheet" id="wp-block-library-css" href="/css/style.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="contact-form-7-css" href="/css/styles.css" type="text/css" media="all">
         <script type="text/javascript" src="{{ asset('/js/jquery.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/jquery-migrate.min.js') }}"></script>
         <link rel="https://api.w.org/" href="https://benriya-clean.com/wp-json/">
@@ -147,7 +147,7 @@
             });
         </script>
         <meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
-        <script src="./index_files/f(1).txt"></script>
+        <script src="{{ asset('/index_files/f(1).txt') }}"></script>
     </head>
 
     <body id="top" style="">

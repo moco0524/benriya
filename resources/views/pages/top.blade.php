@@ -263,8 +263,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             </div>
         </div>
 
-        <script type="text/javascript" src="./js/scripts.js"></script>
-        <script type="text/javascript" src="./js/wp-embed.min.js"></script>
+        <script type="text/javascript" src="{{ asset('/js/scripts.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('/js/wp-embed.min.js') }}"></script>
 
         <script type="text/javascript" id="">
             (function(){var b=void 0;document.addEventListener("click",function(a){a.target&&a.target.href&&0==a.target.href.indexOf("tel:")&&(b={timestamp:(new Date).getTime(),element:a.target})});callListener=function(){if(b){var a=(new Date).getTime()-b.timestamp;dataLayer.push({event:"Call","gtm.element":b.element,duration:Math.floor(a/1E3)});b=void 0}};document.addEventListener("touchstart",callListener);document.addEventListener("mousemove",callListener)})();
