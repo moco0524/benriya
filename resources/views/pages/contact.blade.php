@@ -19,14 +19,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		                <div class="logo_fixedheader">
 <!--		                    <a href="https://benriya-clean.com/contact/index.php">-->
 		                    <a href="contact.html">
-		                        <img src="./images//logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
+		                        <img src="/images//logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
 		                    </a>
 		                </div>
 		                <div class="tel_fixedheader">
-		                    <img src="./images//scroll-tel-1.png" alt="24時間受付！年中無休緊急対応！インターネット専用ダイヤル">
+		                    <img src="/images//scroll-tel-1.png" alt="24時間受付！年中無休緊急対応！インターネット専用ダイヤル">
 		                </div>
 		                <div class="Webwari_fixedheader">
-		                    <img src="./images//scroll-webwari.png" alt="Web割で10%還元">
+		                    <img src="/images//scroll-webwari.png" alt="Web割で10%還元">
 		                </div>
 		                <div class="mail_fixedheader ">
 <!--		                    <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
@@ -42,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 <h3>24時間 年中無休で受付中！<br>
                     <span class="h3-color tokyo-txcolor">お見積り・お問合せフォーム</span>
                 </h3>
-                <p><img src="./images//contact-step-1.png"></p>
+                <p><img src="/images//contact-step-1.png"></p>
             </div>
             <div class="container contact-step">
                 <div class="form-area tokyo-border">
