@@ -26,7 +26,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		                <div class="Webwari_fixedheader"><img src="/images//scroll-webwari.png" alt="Web割で10%還元"></div>
 		                <div class="mail_fixedheader ">
 <!--		                    <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
-		                    <a href="contact.html">メール相談・お問合せ</a>
+		                    <a href="/contact">メール相談・お問合せ</a>
 		                </div>
 	                </div>
                 </div>

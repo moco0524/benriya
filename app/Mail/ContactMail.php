@@ -34,7 +34,6 @@ class ContactMail extends Mailable
      */
     public function build()
     { 
-//        mailadd = "benriya.clean.web@gmail.com";
         $to = array( 'benriya.clean.info@gmail.com' , 'benriya.clean.mng@gmail.com' );
         return $this
             ->from( $this->email)
@@ -47,8 +46,6 @@ class ContactMail extends Mailable
                         'address' => $this->address,
                         'mailadd' => $this->email,
                         'kinkyu' => $this->kinkyu,
-                        'body' => $this->message,
-                        'val1' => "",
-                        'val2' => ""]);
+                        'body' => $this->message]);
     }
 }
