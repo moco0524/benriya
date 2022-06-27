@@ -3,8 +3,6 @@
 @section('title', 'お得な割引パック | 便利屋クリーン')
 
 @section('content')
-<!--<input type="hidden" id="page" value="{{ $page }}" />-->
-<!--<input type="hidden" id="place" value="{{ $place }}" />-->
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHV22V6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
