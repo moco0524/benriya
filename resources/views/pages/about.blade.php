@@ -40,7 +40,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <h2><img src="/images/area-gaiyou.png" alt="対応エリア"></h2>
         </div>
         <div class="sp-main-v sp" align="center">
-            <h2><img src="/images/areasp-gaiyou.png" alt="対応エリア"></h2>
+<!--            <h2><img src="/images/areasp-gaiyou.png" alt="対応エリア"></h2>-->
+            <h2><img src="/images/area-gaiyou.png" alt="対応エリア"></h2>
         </div>
 
         <script type="text/javascript">
