@@ -15,5 +15,5 @@ Route::get('/top/{page?}/{place?}', 'TopController@index');
 Route::get('/contact', 'TopController@contact');
 Route::get('/about', 'TopController@about');
 Route::get('/area', 'TopController@area');
-Route::get('/campaign/{page?}/{place?}', 'TopController@campaign');
+Route::get('/campaign', 'TopController@campaign');
 Route::post('/mail/send', 'RegisterController@register');

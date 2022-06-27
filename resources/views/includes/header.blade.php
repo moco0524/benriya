@@ -1,49 +1,14 @@
-<ul class="menuwrap">
-    <li style="margin: 0 auto;"><img class="imagesize" src="/images/logo.png"></li>
-    <li id="hdMsg" style="margin:0 auto;"></li>
-    <div class="buttonArea">
-		<li class="mailButton"><input type="button" class="styled" onclick="mailClick()" value="メールはこちら"></li>
-		<li class="telButton"><input type="button" class="styled" id="phoneCall"  onclick="telClick()" value="電話はこちら"></li>
-    </div>
-</ul>
-
-<div class="wrapper">
-    <div class="menu">
-        <a href="/top">Home</a>
-    </div>
- 
-    <div class="menu">
-        <a href="/about">会社概要</a>
-    </div>
-
-    <div class="menu">
-        <a href="/area">対応エリア</a>
-    </div>
-
-    <div class="menu">
-        <a href="/campaign">割引</a>
-    </div>
-</div>
-
-<script type="text/javascript">
-	$(function(){
-		var ua = navigator.userAgent;
-		if ((ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) ||
-			(ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0)) {
-			$("#hdMsg").html('');
-			$("#phoneCall").show();
-		} else {
-//			$("#hdMsg").html('');
-			$("#hdMsg").html('<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png"></a>');
-//			$("#phoneCall").show();
-			$("#phoneCall").hide();
-		}		
-	})
-
-    function mailClick() {
-        location.href = "/contact";
-    }
-    function telClick() {
-    	location.href = "tel:0120065955";
-    }
-</script>
+        <header>
+            <div class="container head">
+                <div class="description"><h1></h1></div>
+                <div class="logo">
+                    <a href="/top"><img src="/images/logo.png" class="img-responsive" alt=""></a>
+                </div>
+                <div class="header-tel">
+                    <img src="/images/head_tel.png">
+                    <div class="top-link">＞ WEB割・作業料金から10%還元</div>
+                </div>
+<!--            <div class="header-mail"><a href="https://benriya-clean.com/#contact">メール相談・お問合せ</a></div>-->
+                <div class="header-mail"><a href="#contact">メール相談・お問合せ</a></div>
+            </div>
+        </header>

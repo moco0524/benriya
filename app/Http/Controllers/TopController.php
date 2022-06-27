@@ -32,15 +32,16 @@ class TopController extends Controller
             Storage::append($yymm . '_accesslog.csv', $log);
             
             // 指定のページへジャンプ
-            if ($page != "no") {
-                return view ( 'pages.campaign', compact( 'page' , 'place' ) );
-            } else {
-                return view ( 'pages.top' );
-            }
-        } else {
-            // トップページを表示
-            return view ( 'pages.top', [ 'page' => $page] );
+//            if ($page != "no") {
+//                return view ( 'pages.campaign', compact( 'page' , 'place' ) );
+//            } else {
+//                return view ( 'pages.top' );
+//           }
+//        } else {
         }
+            // トップページを表示
+        return view ( 'pages.top');
+//        }
     }
 
     public function contact ( Request $request ) {
@@ -55,8 +56,8 @@ class TopController extends Controller
         return view ( 'pages.area' );
     }
 
-    public function campaign ( string $page='no', string $place='no') {
-        return view ( 'pages.campaign', compact( 'page', 'place' ) );
+    public function campaign () {
+        return view ( 'pages.campaign' );
     }
 
 }
