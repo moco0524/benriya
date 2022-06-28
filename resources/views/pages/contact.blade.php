@@ -150,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		    })
 
 			// ヴァリデーションチェック
-			$('#mail_send').click( function() {
+			$('#mail_send').on('click touchstart', function() {
 				ErrFlag = true;
 				// 名前のバリデーション
 				if ($("#your-name").val() == "") {

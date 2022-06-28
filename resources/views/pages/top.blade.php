@@ -246,7 +246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                 </span>
                             </p>
                             <div class="send-btn">
-                                <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit" disabled = false>
+                                <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit" >
                                 <span class="ajax-loader"></span>
                             </div>
                             <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
@@ -288,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		    })
 
 			// ヴァリデーションチェック
-			$('#mail_send').click( function() {
+			$('#mail_send').on('click touchstart', function() {
 				ErrFlag = true;
 				// 名前のバリデーション
 				if ($("#your-name").val() == "") {
