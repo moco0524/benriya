@@ -15,7 +15,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	            <div id="fixed-header" class="#FF69B4">
 	                <div class="container head">
 		                <div class="logo_fixedheader">
-<!--		                    <a href="https://benriya-clean.com/area/index.php">-->
 		                    <a href="index.php">
 		                        <img src="/images//logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
 		                    </a>
@@ -25,7 +24,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		                </div>
 		                <div class="Webwari_fixedheader"><img src="/images//scroll-webwari.png" alt="Web割で10%還元"></div>
 		                <div class="mail_fixedheader ">
-<!--		                    <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
 		                    <a href="/contact">メール相談・お問合せ</a>
 		                </div>
 	                </div>

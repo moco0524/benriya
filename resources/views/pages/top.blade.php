@@ -3,6 +3,9 @@
 @section('title', '便利屋クリーン | 便利屋 なんでも屋 首都圏全域対応')
 
 @section('content')
+        <!-- 移動用パラメータ設定 -->
+        <input type="hidden" id="page" value="{{ $page }}" />
+
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHV22V6"
@@ -15,7 +18,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 <div id="fixed-header" class="#FF69B4">
                     <div class="container head">
                         <div class="logo_fixedheader">
-<!--                        <a href="https://benriya-clean.com/index.php">-->
                             <a href="index.html">
                                 <img src="/images/logo-scroll.png" alt="便利屋クリーンは24時間受付・年中無休で対応！">
                             </a>
@@ -27,7 +29,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             <img src="/images/scroll-webwari.png" alt="Web割で10%還元">
                         </div>
                         <div class="mail_fixedheader ">
-<!--                        <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
                             <a href="#contact">メール相談・お問合せ</a>
                         </div>
                     </div>
@@ -43,7 +44,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <h2><img src="/images/sp-main.gif" alt="困りごとの解決は便利屋クリーンへ！首都圏全域対応24時間365日対応"></h2>
             <div class="sp-btn-area clearfix">
                 <div class="sp-tel-btn col-xs-6"><a href="tel:0120065955"><img src="/images/sp-tel-btn.png"></a></div>
-<!--            <div class="sp-mail-btn col-xs-6"><a href="https://benriya-clean.com/#contact"><img src="/images/sp-mail.png"></a></div>-->
                 <div class="sp-mail-btn col-xs-6"><a href="#contact"><img src="/images/sp-mail.png"></a></div>
             </div>
             <div class="sp-tel"><img src="/images/sp-tel-1.png"></div>
@@ -63,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         <div class="container-fild top-service">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 col-xs-12" id="fuyohin">
                         <div class="service-area">
                             <div class="srvice-title huyou-top">
                                 <h4>不用品処分</h4>
@@ -76,7 +76,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 col-xs-12" id="souji">
                         <div class="service-area">
                             <div class="srvice-title niwa-top">
                                 <h4>庭掃除</h4>
@@ -92,7 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 col-xs-12" id="ihin">
                         <div class="service-area">
                             <div class="srvice-title ihin-top">
                                 <h4>遺品整理</h4>
@@ -105,7 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-6 col-xs-12" id="support">
                         <div class="service-area">
                             <div class="srvice-title hikkoshi-top">
                                 <h4>引越しサポート</h4>
@@ -119,7 +119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12 sp-column">
+                    <div class="col-sm-6 col-xs-12 sp-column" id="moving">
                         <div class="service-area">
                             <div class="srvice-title kagu-top">
                                 <h4>家具家電移動</h4>
@@ -132,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xs-12 sp-column2">
+                    <div class="col-sm-6 col-xs-12 sp-column2" id="daiku">
                         <div class="service-area">
                             <div class="srvice-title daiku-top">
                                 <h4>日曜大工</h4>
@@ -169,7 +169,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                 <div class="form-area tokyo-border">
                     <div role="form" class="wpcf7" id="wpcf7-f99-p7-o1" lang="ja" dir="ltr">
                         <div class="screen-reader-response" role="alert" aria-live="polite"></div>
-<!--                        <form action="https://benriya-clean.com/#wpcf7-f99-p7-o1" method="post" class="wpcf7-form init" novalidate="novalidate">-->
                         <form name="mailsend" id="mailsend" action="/mail/send" method="post" class="wpcf7-form init" novalidate="novalidate">
                             @csrf
                             <div style="display: none;">
@@ -220,7 +219,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                     <span class="wpcf7-form-control-wrap kinkyu">
                                         <span class="wpcf7-form-control wpcf7-checkbox">
                                             <span class="wpcf7-list-item first last">
-<!--                                                <input type="checkbox" name="kinkyu[]" value="今すぐ解決してほしい">-->
                                                 <input type="checkbox" name="kinkyu" value="今すぐ解決してほしい">
                                                 <span class="wpcf7-list-item-label">今すぐ解決してほしい</span>
                                             </span>
@@ -240,7 +238,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                     <span class="wpcf7-form-control wpcf7-acceptance">
                                         <span class="wpcf7-list-item">
                                             <label>
-                                                <input type="checkbox" name="acceptance-450" value="1" aria-invalid="false">
+                                                <input type="checkbox" name="acceptance-450" id="acceptance-450" value="1" aria-invalid="false">
                                                 <span class="wpcf7-list-item-label">内容をご確認の上チェックを入れてください <span class="red">(必須)</span></span>
                                             </label>
                                         </span>
@@ -248,8 +246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                 </span>
                             </p>
                             <div class="send-btn">
-<!--                                <input type="submit" value="送信" class="wpcf7-form-control wpcf7-submit" disabled="">-->
-                                <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit">
+                                <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit" disabled = false>
                                 <span class="ajax-loader"></span>
                             </div>
                             <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
@@ -266,83 +263,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             (function(){var b=void 0;document.addEventListener("click",function(a){a.target&&a.target.href&&0==a.target.href.indexOf("tel:")&&(b={timestamp:(new Date).getTime(),element:a.target})});callListener=function(){if(b){var a=(new Date).getTime()-b.timestamp;dataLayer.push({event:"Call","gtm.element":b.element,duration:Math.floor(a/1E3)});b=void 0}};document.addEventListener("touchstart",callListener);document.addEventListener("mousemove",callListener)})();
         </script>
 
-        <script type="text/javascript">
-	        $(function(){
-		        var ua = navigator.userAgent;
-		        if ((ua.indexOf("iPhone") > 0 || ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0) ||
-			        (ua.indexOf("iPad") > 0 || ua.indexOf("Android") > 0)) {
-			        $("#callphone").html('まずは　☎️ <a href="tel:0120065955">０１２０ー０６５ー９５５</a>　までお電話ください');
-			        $("#topMsg").html('<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png">');
-		        } else {
-			        $("#callphone").html('まずは　☎️ ０１２０ー０６５ー９５５　までお電話ください');
-			        $("#topMsg").html('');
-//			      $("#topMsg").html('<a href="tel:0120065955"><img class="imagesize" src="/images/head_tel.png">');
+		<script type="text/javascript">
+		    // ページ表示時の移動
+	        $(document).ready( function () {
+		        var page = $("#page").val();
+		        if ( page != "no") {
+			        var p = $("#" + page).offset().top - 70;
+			        $('html,body').animate({scrollTop: p}, 'slow');
+			        return false;
 		        }
 	        })
-        </script>
+		    
+		    // 送信ボタン
+		    $("#acceptance-450").click( function() {
+		        if ($("#acceptance-450").prop("checked")) {
+		            $("#mail_send").prop("disabled", false);
+		        } else {
+		            $("#mail_send").prop("disabled", true);
+					$("#your-name").css("background-color","#ffffff");
+					$("#tel-492").css("background-color","#ffffff");
+					$("#your-email").css("background-color","#ffffff");
+					$("#your-message").css("background-color","#ffffff");
+		        }
+		    })
 
-		<script type="text/javascript">
 			// ヴァリデーションチェック
 			$('#mail_send').click( function() {
 				ErrFlag = true;
 				// 名前のバリデーション
 				if ($("#your-name").val() == "") {
-//					$("#errName").html("　お名前を入力して下さい");
-//					$("#nameSize").css('height', '100');
 					$("#your-name").css("background-color","#ff97c2");
 					ErrFlag = false;
 				} else if ($("#your-name").val().match(/^[ァ-ンヴーｧ-ﾝﾞﾟ\-]*$/)) {
-//					$("#errName").html("");
-//					$("#nameSize").css('height', '80');
 					$("#your-name").css("background-color","#ffffff");
 				} else {
-//					$("#errName").html("　お名前をカナで入力して下さい");
-//					$("#nameSize").css('height', '100');
 					$("#your-name").css("background-color","#ff97c2");
 					ErrFlag = false;
 				}
 
 				// 電話番号のバリデーション
 				if ($("#tel-492").val() == "") {
-//					$("#errTelNo").html("　お電話番号を入力して下さい");
-//					$("#telNoSize").css('height', '100');
 					$("#tel-492").css("background-color","#ff97c2");
 					ErrFlag = false;
 				} else if ($("#tel-492").val().match(/^0\d{9,10}$/)) {
-//					$("#errTelNo").html("");
-//					$("#telNoSize").css("height", "80");
 					$("#tel-492").css("background-color","#ffffff");
 				} else {
-//					$("#errTelNo").html("　10桁または11桁の数字で入力して下さい");
-//					$("#telNoSize").css("height", "100");
 					$("#tel-492").css("background-color","#ff97c2");
 					ErrFlag = false;
 				}
 
 				// メールアドレスのバリデーション
 				if ($("#your-email").val() == "") {
-//					$("#errMail").html("　メールアドレスを入力して下さい");
-//					$("#emailSize").css("height", "100");
 					$("#your-email").css("background-color","#ff97c2");
 					ErrFlag = false;
 				} else if ($("#your-email").val().match(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/)) {
-//					$("#errMail").html("");
-//					$("#emailSize").css("height", "80");
 					$("#your-email").css("background-color","#ffffff");
 				} else {
-//					$("#errMail").html("　メールアドレスの形式となっていません");
-//					$("#emailSize").css("height", "100");
 					$("#your-email").css("background-color","#ff97c2");
 					ErrFlag = false;
 				}
 		
 				// メール本文のバリデーション
 				if ($("#your-message").val() == "") {
-//					$("#errMsg").html("　メール本文を入力して下さい");
 					$("#your-message").css("background-color","#ff97c2");
 					ErrFlag = false;
 				} else {
-//					$("#errMsg").html("");
 					$("#your-message").css("background-color","#ffffff");
 				}
 		

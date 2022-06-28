@@ -22,7 +22,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		                </div>
 		                <div class="Webwari_fixedheader"><img src="/images/scroll-webwari.png" alt="Web割で10%還元"></div>
 		                <div class="mail_fixedheader ">
-<!--		                    <a href="https://benriya-clean.com/contact">メール相談・お問合せ</a>-->
 		                    <a href="/contact">メール相談・お問合せ</a>
 		                </div>
 	                </div>
@@ -40,7 +39,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
             <h2><img src="/images/area-gaiyou.png" alt="対応エリア"></h2>
         </div>
         <div class="sp-main-v sp" align="center">
-<!--            <h2><img src="/images/areasp-gaiyou.png" alt="対応エリア"></h2>-->
             <h2><img src="/images/area-gaiyou.png" alt="対応エリア"></h2>
         </div>
 

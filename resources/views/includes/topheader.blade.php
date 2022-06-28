@@ -8,7 +8,6 @@
                     <img src="/images/head_tel.png">
                     <div class="top-link">＞ WEB割・作業料金から10%還元</div>
                 </div>
-<!--            <div class="header-mail"><a href="https://benriya-clean.com/#contact">メール相談・お問合せ</a></div>-->
                 <div class="header-mail"><a href="#contact">メール相談・お問合せ</a></div>
             </div>
         </header>
