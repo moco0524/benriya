@@ -275,18 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	        })
 		    
 		    // 送信ボタン
-		    $("#acceptance-450").on('touchstart',  function() {
-		        if ($("#acceptance-450").prop("checked")) {
-		            $("#mail_send").prop("disabled", false);
-		        } else {
-		            $("#mail_send").prop("disabled", true);
-					$("#your-name").css("background-color","#ffffff");
-					$("#tel-492").css("background-color","#ffffff");
-					$("#your-email").css("background-color","#ffffff");
-					$("#your-message").css("background-color","#ffffff");
-		        }
-		    })
-		    $("#acceptance-450").on('click',  function() {
+		    $("#acceptance-450").change( function() {
 		        if ($("#acceptance-450").prop("checked")) {
 		            $("#mail_send").prop("disabled", false);
 		        } else {
