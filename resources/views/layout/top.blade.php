@@ -3,10 +3,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- Google Tag Manager -->
-        <script type="text/javascript" async="" src="{{ asset('/js/f.txt') }}"></script>
-        <script type="text/javascript" async="" src="{{ asset('/js/analytics.js') }}"></script>
-        <script type="text/javascript" async="" src="{{ asset('/js/js') }}"></script>
-        <script async="" src="{{ asset('/js/gtm.js') }}"></script>
+        <script type="text/javascript" async="" src="/js/f.txt"></script>
+        <script type="text/javascript" async="" src="/js/analytics.js"></script>
+        <script type="text/javascript" async="" src="/js/js"></script>
+        <script async="" src="/js/gtm.js"></script>
 <!--
         <script>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NHV22V6');
@@ -24,10 +24,10 @@
         <link href="/css/style.css" rel="stylesheet">
     
         <!-- jQuery読み込み -->
-        <script src="{{ asset('/js/jquery.min.js') }}"></script>
+        <script src="/js/jquery.min.js"></script>
     
         <!-- BootstrapのJS読み込み -->
-        <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+        <script src="/js/bootstrap.min.js"></script>
         <link href="/css/font-awesome.min.css" rel="stylesheet">
         <title>便利屋クリーン | 便利屋 なんでも屋 首都圏全域対応</title>
 
@@ -48,7 +48,7 @@
             !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
         </script>
 -->
-        <script src="{{ asset('/js/wp-emoji-release.min.js') }}" type="text/javascript" defer=""></script>
+        <script src="/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
         <style type="text/css">
             img.wp-smiley,
             img.emoji {
@@ -65,8 +65,8 @@
         </style>
         <link rel="stylesheet" id="wp-block-library-css" href="/css/style.min.css" type="text/css" media="all">
         <link rel="stylesheet" id="contact-form-7-css" href="/css/styles.css" type="text/css" media="all">
-        <script type="text/javascript" src="{{ asset('/js/jquery.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('/js/jquery-migrate.min.js') }}"></script>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/jquery-migrate.min.js"></script>
 <!--
         <link rel="https://api.w.org/" href="https://benriya-clean.com/wp-json/">
         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://benriya-clean.com/wp2/xmlrpc.php?rsd">
@@ -155,7 +155,7 @@
             });
         </script>
         <meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
-        <script src="{{ asset('/index_files/f(1).txt') }}"></script>
+        <script src="/js/f(1).txt"></script>
     </head>
 
     <body id="top" style="">
