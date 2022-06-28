@@ -17,7 +17,7 @@ class RegisterController extends Controller
     	$name = $request['your-name'];
     	$telno = $request['tel-492'];
     	$zipno = $request['add-num'];
-    	$address = $request['your-email'];
+    	$address = $request['address'];
     	$email = $request['your-email'];
     	$kinkyu = $request['kinkyu'];
     	$message = $request['your-message'];
