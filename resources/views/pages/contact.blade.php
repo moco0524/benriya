@@ -136,8 +136,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
 
 		<script type="text/javascript">
+		    var clickEventType = ((window.ontouchstart !== null)? 'click' : 'tourchstart' );
 		    // 送信ボタン
-		    $("#acceptance-450").change( function() {
+		    $("#acceptance-450").on( clickEventType, function() {
 		        if ($("#acceptance-450").prop("checked")) {
 		            $("#mail_send").prop("disabled", false);
 		        } else {
@@ -150,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		    })
 
 			// ヴァリデーションチェック
-			$('#mail_send').on('click touchstart', function() {
+			$('#mail_send').on( clickEventType, function() {
 				ErrFlag = true;
 				// 名前のバリデーション
 				if ($("#your-name").val() == "") {
