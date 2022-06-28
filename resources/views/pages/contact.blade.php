@@ -136,7 +136,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </div>
 
 		<script type="text/javascript">
-		    var clickEventType = ((window.ontouchstart !== null)? 'click' : 'tourchstart' );
+		    var clickEventType = ( ( window.ontouchstart === null )? 'touchstart' : 'click' );
 		    // 送信ボタン
 		    $("#acceptance-450").on( clickEventType, function() {
 		        if ($("#acceptance-450").prop("checked")) {

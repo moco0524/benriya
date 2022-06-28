@@ -36,7 +36,6 @@ class ContactMail extends Mailable
     { 
         $to = array( 'benriya.clean.info@gmail.com' , 'benriya.clean.mng@gmail.com' );
         return $this
-            ->from( $this->email)
             ->subject('問い合わせメール')
             ->to( $to, '便利屋クリーン' )
             ->view('pages.register_mail')
