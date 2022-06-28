@@ -264,7 +264,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </script>
 
 		<script type="text/javascript">
-		    var clickEventType = ( ( window.ontouchstart === null )? ''touchstart' : 'click' );
 		    // ページ表示時の移動
 	        $(document).ready( function () {
 		        var page = $("#page").val();
@@ -275,6 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		        }
 	        })
 		    
+		    var clickEventType = ( ( window.ontouchstart === null )? 'touchstart' : 'click' );		    
 		    // 送信ボタン
 		    $("#acceptance-450").on( clickEventType, function() {
 		        if ($("#acceptance-450").prop("checked")) {

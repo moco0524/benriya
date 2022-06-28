@@ -24,13 +24,40 @@ class TopController extends Controller
             $sessionId = $request->session()->getId();
         
             // ログ作成
-            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $page . '","' . $place . '"';
+            switch ($page) {
+            case 'fuyohin':
+                $jump_page = '不用品処分';
+                break;
+            case 'souji':
+                $jump_page = '庭掃除';
+                break;
+            case 'ihin':
+                $jump_page = '遺品整理';
+                break;
+            case 'support':
+                $jump_page = '引越し';
+                break;
+            case 'moving':
+                $jump_page = '家具移動';
+                break;
+            case 'daiku':
+                $jump_page = '日曜大工';
+                break;
+            case 'kaitori':
+                $jump_page = '家電買取';
+                break;
+            case 'daikou':
+                $jump_page = '各種代行';
+                break;
+            default:
+                $jump_page = 'その他';
+            }
+            $log =  '"' . $today . '","' . $ipAddress . '","' . $sessionId . '","' . $jump_page . '","' . $place . '"';
         
             // ローカル領域へのログ出力
             $disk = Storage::disk('local');
             $yymm = date("Ym");
             Storage::append($yymm . '_accesslog.csv', $log);
-            
         }
             // トップページを表示
         return view ( 'pages.top', [ 'page' => $page ] );
