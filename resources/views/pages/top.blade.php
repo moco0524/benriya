@@ -275,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 	        })
 		    
 		    // 送信ボタン
-		    $("#acceptance-450").click( function() {
+		    $("#acceptance-450").on('touchstart click',  function() {
 		        if ($("#acceptance-450").prop("checked")) {
 		            $("#mail_send").prop("disabled", false);
 		        } else {
