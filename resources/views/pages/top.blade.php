@@ -231,7 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                             <p>
                                 <label> メッセージ本文 <span class="red">(必須)</span><br>
                                     <span class="wpcf7-form-control-wrap your-massage">
-                                        <textarea name="your-massage" id="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
+                                        <textarea name="your-message" id="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
                                     </span> 
                                 </label>
                             </p>
