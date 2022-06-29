@@ -3,8 +3,6 @@
 @section('title', '足立区　便利屋クリーン　連絡用')
 
 @section('content')
-
-    <body id="top" style="">
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHV22V6"
@@ -124,6 +122,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                     </span>
                                 </span>
                             </p>
+                            <!-- 移動用パラメータ設定 -->
+                            <input type="hidden" id="page" name="page" value="{{ $page }}" />
                             <div class="send-btn">
                                 <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit" disabled>
                                 <span class="ajax-loader"></span>
@@ -201,5 +201,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 					return ErrFlag;
 				}
 			})
-</script>
+        </script>
 @endsection

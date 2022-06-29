@@ -29,7 +29,8 @@
         <!-- BootstrapのJS読み込み -->
         <script src="/js/bootstrap.min.js"></script>
         <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <title>便利屋クリーン | 便利屋 なんでも屋 首都圏全域対応</title>
+<!--        <title>便利屋クリーン | 便利屋 なんでも屋 首都圏全域対応</title>-->
+        <title>@yield('title')</title>
 
         <!-- All In One SEO Pack 3.7.0[1251,1291] -->
 <!--

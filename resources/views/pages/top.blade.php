@@ -4,8 +4,8 @@
 
 @section('content')
         <!-- 移動用パラメータ設定 -->
-        <input type="hidden" id="page" value="{{ $page }}" />
-
+        <input type="hidden" id="place" name="place" value="{{ $place }}" />
+ 
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHV22V6"
@@ -245,6 +245,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
                                     </span>
                                 </span>
                             </p>
+                            <!-- 移動用パラメータ設定 -->
+                            <input type="hidden" id="page" name="page" value="{{ $page }}" />
                             <div class="send-btn">
                                 <input type="submit" id="mail_send" value="送信" class="wpcf7-form-control wpcf7-submit" disabled>
                                 <span class="ajax-loader"></span>
@@ -267,7 +269,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		    // ページ表示時の移動
 	        $(document).ready( function () {
 		        var page = $("#page").val();
-		        if ( page != "no") {
+		        var place = $("#place").val();
+		        if ( page != "no" && place != "no") {
 			        var p = $("#" + page).offset().top - 70;
 			        $('html,body').animate({scrollTop: p}, 'slow');
 			        return false;

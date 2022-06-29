@@ -60,23 +60,24 @@ class TopController extends Controller
             Storage::append($yymm . '_accesslog.csv', $log);
         }
             // トップページを表示
-        return view ( 'pages.top', [ 'page' => $page ] );
+//        return view ( 'pages.top', [ 'page' => $page ] );
+        return view ( 'pages.top', compact( 'page', 'place' ) );
     }
 
-    public function contact ( Request $request ) {
-        return view ( 'pages.contact' );
+    public function contact ( Request $request, string $page='no' ) {
+        return view ( 'pages.contact', [ 'page' => $page ]  );
     }
 
-    public function about () {
-        return view ( 'pages.about' );
+    public function about (string $page='no') {
+        return view ( 'pages.about', [ 'page' => $page ]  );
     }
 
-    public function area () {
-        return view ( 'pages.area' );
+    public function area (string $page='no') {
+        return view ( 'pages.area', [ 'page' => $page ]  );
     }
 
-    public function campaign () {
-        return view ( 'pages.campaign' );
+    public function campaign (string $page='no') {
+        return view ( 'pages.campaign', [ 'page' => $page ]  );
     }
 
 }

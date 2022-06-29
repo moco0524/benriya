@@ -10,7 +10,7 @@ use App\Mail\ContactMail;
 class RegisterController extends Controller
 {
 //    public function register(Request $request, string $place='', string $page='') {
-    public function register(Request $request) {
+    public function register(Request $request ) {
 //        $val1 = $place;
 //        $val2 = $page;
         
@@ -21,9 +21,10 @@ class RegisterController extends Controller
     	$email = $request['your-email'];
     	$kinkyu = $request['kinkyu'];
     	$message = $request['your-message'];
+    	$page = $request['page'];
     	
-    	Mail::send(new ContactMail($name, $telno, $zipno, $address, $email, $kinkyu, $message));
+    	Mail::send(new ContactMail($name, $telno, $zipno, $address, $email, $kinkyu, $message, $page));
 //    	return view('pages.thanks', compact( 'val1', 'val2' ) );
-    	return view('pages.thanks');
+    	return view('pages.thanks', [ 'page' => $page ]);
 	}
 }

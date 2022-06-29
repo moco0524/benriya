@@ -16,7 +16,7 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public function __construct($name, $telno, $zipno, $address, $email, $kinkyu, $message)
+    public function __construct($name, $telno, $zipno, $address, $email, $kinkyu, $message, $page)
     {
         $this->name = $name;
         $this->telno = $telno;
@@ -25,6 +25,7 @@ class ContactMail extends Mailable
         $this->email = $email;
         $this->kinkyu = $kinkyu;
         $this->message = $message;
+        $this->page = $page;
     }
 
     /**
@@ -34,9 +35,39 @@ class ContactMail extends Mailable
      */
     public function build()
     { 
+        switch ($this->page) {
+        case 'fuyohin':
+            $page = "不用品処分";
+            break;
+        case 'souji':
+            $page = "庭掃除";
+            break;
+        case 'ihin':
+            $page = "遺品整理";
+            break;
+        case 'support':
+            $page = "引越し";
+            break;
+        case 'moving':
+            $page = "家具移動";
+            break;
+        case 'daiku':
+            $page = "日曜大工";
+            break;
+        case 'kaitori':
+            $page = "家電買取";
+            break;
+        case 'daikou':
+            $page = "各種代行";
+            break;
+        default:
+            $page = "その他";
+        }
+
         $to = array( 'benriya.clean.info@gmail.com' , 'benriya.clean.mng@gmail.com' );
+
         return $this
-            ->subject('問い合わせメール')
+            ->subject( '問い合わせメール [ ' . $page . ' ]' )
             ->to( $to, '便利屋クリーン' )
             ->view('pages.register_mail')
             ->with(['name' => $this->name,
